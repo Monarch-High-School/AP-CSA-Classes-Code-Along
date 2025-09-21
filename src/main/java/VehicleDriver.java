@@ -34,7 +34,7 @@
         int vehicle2Year = 2024;
         double vehicle2FuelEfficiency = 8.0; 
         double vehicle2FuelCapacity = 26.4;
-        double vehicle2CurrentFuel = 26.4;
+        double vehicle2CurrentFuel = 3.0;
         double vehicle2TotalMileage = 200.5;
 
          System.out.printf("%d %s %s: Total Mileage: %.1f, Fuel: %.1f/%.1f, MPG: %.1f\n",
@@ -74,7 +74,21 @@
                         );
 
 
-        // Drive 50 miles with vehicle 2, but I don't want to write that code write now
+        // Drive 25 miles with vehicle 2 - should probably check if I have enough fuel. 
+        fuelNeeded = 25 / vehicle2FuelEfficiency;
+        vehicle2TotalMileage += 25;
+        vehicle2CurrentFuel -= fuelNeeded;
+
+        System.out.println("Driving 25 miles with vehicle 2");
+         System.out.printf("%d %s %s: Total Mileage: %.1f, Fuel: %.1f/%.1f, MPG: %.1f\n",
+                        vehicle2Year,
+                        vehicle2Make,
+                        vehicle2Model,
+                        vehicle2TotalMileage,
+                        vehicle2CurrentFuel,
+                        vehicle2FuelCapacity,
+                        vehicle2FuelEfficiency
+                        );            
 
     }
  }
