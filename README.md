@@ -1,2 +1,5 @@
 # AP CSA Classes Code Along
-Using this repository, we'll learn about how classes work in Object-Oriented Programming and Java by building a class that allows us to track the fuel usage for the dashboard of a vehicle focussing just on fuel and the range it can drive. We will start out by writing parts of the class and then testing it using a driver class. As we write the program together, write comments to help you remember what is what.
+Using this repository, we'll learn about how classes work in Object-Oriented Programming and Java.
+
+## Scenario
+In the repo, there is code that tries to keep simple track of data for two vehicles in a non-OOP way: how far each car has driven and how much fuel each car currently has. By identifying shortcomings in this process, we hope to show how useful classes are.
